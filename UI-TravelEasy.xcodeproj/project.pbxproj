@@ -10,11 +10,17 @@
 		4441F14133C2A4DB3A5DA62D /* Pods_UI_TravelEasyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB1C29A1EFBF25CD72A2189A /* Pods_UI_TravelEasyTests.framework */; };
 		4A5ADD4DAE4EC82184F00114 /* Pods_UI_TravelEasyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09DA16295AE0C024249D57A /* Pods_UI_TravelEasyUITests.framework */; };
 		6DBFC1F761450E74FBB2056F /* Pods_UI_TravelEasy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C8C0D7564C2FBCF3A27F253 /* Pods_UI_TravelEasy.framework */; };
+		C05FB6B91FAF14E20012CBB9 /* TEConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05FB6B81FAF14E20012CBB9 /* TEConstants.swift */; };
+		C05FB6BC1FAF28290012CBB9 /* TEPlacesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05FB6BB1FAF28290012CBB9 /* TEPlacesCell.swift */; };
+		C05FB6BE1FAF2C600012CBB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C05FB6BD1FAF2C5F0012CBB9 /* Assets.xcassets */; };
+		C05FB6C41FAF2CC20012CBB9 /* Japan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C05FB6C01FAF2CC20012CBB9 /* Japan.jpg */; };
+		C05FB6C51FAF2CC20012CBB9 /* Taiwan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C05FB6C11FAF2CC20012CBB9 /* Taiwan.jpg */; };
+		C05FB6C61FAF2CC20012CBB9 /* China.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C05FB6C21FAF2CC20012CBB9 /* China.jpg */; };
+		C05FB6C71FAF2CC20012CBB9 /* Thailand.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C05FB6C31FAF2CC20012CBB9 /* Thailand.jpg */; };
 		C083D5C51FAC87D200382C48 /* TEScrollTabBarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C083D5C41FAC87D200382C48 /* TEScrollTabBarCell.swift */; };
 		C0C870E21FAC4FB700093D81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C870E11FAC4FB700093D81 /* AppDelegate.swift */; };
 		C0C870E41FAC4FB700093D81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C870E31FAC4FB700093D81 /* ViewController.swift */; };
 		C0C870E71FAC4FB700093D81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0C870E51FAC4FB700093D81 /* Main.storyboard */; };
-		C0C870E91FAC4FB700093D81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0C870E81FAC4FB700093D81 /* Assets.xcassets */; };
 		C0C870EC1FAC4FB700093D81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0C870EA1FAC4FB700093D81 /* LaunchScreen.storyboard */; };
 		C0C870F71FAC4FB700093D81 /* UI_TravelEasyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C870F61FAC4FB700093D81 /* UI_TravelEasyTests.swift */; };
 		C0C871021FAC4FB700093D81 /* UI_TravelEasyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C871011FAC4FB700093D81 /* UI_TravelEasyUITests.swift */; };
@@ -47,13 +53,19 @@
 		6C8C0D7564C2FBCF3A27F253 /* Pods_UI_TravelEasy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UI_TravelEasy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D13B810E99E5536E10D08DC /* Pods-UI-TravelEasyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI-TravelEasyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UI-TravelEasyTests/Pods-UI-TravelEasyTests.release.xcconfig"; sourceTree = "<group>"; };
 		A942D70F700737D8723867E9 /* Pods-UI-TravelEasyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI-TravelEasyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UI-TravelEasyUITests/Pods-UI-TravelEasyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C05FB6B81FAF14E20012CBB9 /* TEConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEConstants.swift; sourceTree = "<group>"; };
+		C05FB6BB1FAF28290012CBB9 /* TEPlacesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEPlacesCell.swift; sourceTree = "<group>"; };
+		C05FB6BD1FAF2C5F0012CBB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C05FB6C01FAF2CC20012CBB9 /* Japan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Japan.jpg; sourceTree = "<group>"; };
+		C05FB6C11FAF2CC20012CBB9 /* Taiwan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Taiwan.jpg; sourceTree = "<group>"; };
+		C05FB6C21FAF2CC20012CBB9 /* China.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = China.jpg; sourceTree = "<group>"; };
+		C05FB6C31FAF2CC20012CBB9 /* Thailand.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Thailand.jpg; sourceTree = "<group>"; };
 		C083D5C41FAC87D200382C48 /* TEScrollTabBarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEScrollTabBarCell.swift; sourceTree = "<group>"; };
 		C09DA16295AE0C024249D57A /* Pods_UI_TravelEasyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UI_TravelEasyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0C870DE1FAC4FB700093D81 /* UI-TravelEasy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UI-TravelEasy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0C870E11FAC4FB700093D81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0C870E31FAC4FB700093D81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C0C870E61FAC4FB700093D81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C0C870E81FAC4FB700093D81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0C870EB1FAC4FB700093D81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0C870ED1FAC4FB700093D81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0C870F21FAC4FB700093D81 /* UI-TravelEasyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UI-TravelEasyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +117,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C05FB6BA1FAF28080012CBB9 /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				C0C871121FAC50B600093D81 /* TEScrollTabBar.swift */,
+				C083D5C41FAC87D200382C48 /* TEScrollTabBarCell.swift */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		C05FB6BF1FAF2CAB0012CBB9 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C05FB6C21FAF2CC20012CBB9 /* China.jpg */,
+				C05FB6C01FAF2CC20012CBB9 /* Japan.jpg */,
+				C05FB6C11FAF2CC20012CBB9 /* Taiwan.jpg */,
+				C05FB6C31FAF2CC20012CBB9 /* Thailand.jpg */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		C0C870D51FAC4FB700093D81 = {
 			isa = PBXGroup;
 			children = (
@@ -130,11 +162,12 @@
 		C0C870E01FAC4FB700093D81 /* UI-TravelEasy */ = {
 			isa = PBXGroup;
 			children = (
+				C05FB6B81FAF14E20012CBB9 /* TEConstants.swift */,
 				C0C8710F1FAC505900093D81 /* Places */,
 				C0C870E11FAC4FB700093D81 /* AppDelegate.swift */,
 				C0C870E31FAC4FB700093D81 /* ViewController.swift */,
+				C05FB6BD1FAF2C5F0012CBB9 /* Assets.xcassets */,
 				C0C870E51FAC4FB700093D81 /* Main.storyboard */,
-				C0C870E81FAC4FB700093D81 /* Assets.xcassets */,
 				C0C870EA1FAC4FB700093D81 /* LaunchScreen.storyboard */,
 				C0C870ED1FAC4FB700093D81 /* Info.plist */,
 			);
@@ -162,9 +195,10 @@
 		C0C8710F1FAC505900093D81 /* Places */ = {
 			isa = PBXGroup;
 			children = (
+				C05FB6BA1FAF28080012CBB9 /* Tab */,
 				C0C871101FAC508500093D81 /* TEPlacesViewController.swift */,
-				C0C871121FAC50B600093D81 /* TEScrollTabBar.swift */,
-				C083D5C41FAC87D200382C48 /* TEScrollTabBarCell.swift */,
+				C05FB6BB1FAF28290012CBB9 /* TEPlacesCell.swift */,
+				C05FB6BF1FAF2CAB0012CBB9 /* Resource */,
 			);
 			path = Places;
 			sourceTree = "<group>";
@@ -298,8 +332,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C05FB6C71FAF2CC20012CBB9 /* Thailand.jpg in Resources */,
 				C0C870EC1FAC4FB700093D81 /* LaunchScreen.storyboard in Resources */,
-				C0C870E91FAC4FB700093D81 /* Assets.xcassets in Resources */,
+				C05FB6BE1FAF2C600012CBB9 /* Assets.xcassets in Resources */,
+				C05FB6C41FAF2CC20012CBB9 /* Japan.jpg in Resources */,
+				C05FB6C61FAF2CC20012CBB9 /* China.jpg in Resources */,
+				C05FB6C51FAF2CC20012CBB9 /* Taiwan.jpg in Resources */,
 				C0C870E71FAC4FB700093D81 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,10 +501,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C05FB6B91FAF14E20012CBB9 /* TEConstants.swift in Sources */,
 				C0C871111FAC508500093D81 /* TEPlacesViewController.swift in Sources */,
 				C0C870E41FAC4FB700093D81 /* ViewController.swift in Sources */,
 				C0C870E21FAC4FB700093D81 /* AppDelegate.swift in Sources */,
 				C0C871131FAC50B600093D81 /* TEScrollTabBar.swift in Sources */,
+				C05FB6BC1FAF28290012CBB9 /* TEPlacesCell.swift in Sources */,
 				C083D5C51FAC87D200382C48 /* TEScrollTabBarCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

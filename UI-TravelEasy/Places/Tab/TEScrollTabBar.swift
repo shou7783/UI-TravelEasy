@@ -31,7 +31,10 @@ class TEScrollTabBar: UIView {
     weak var dataSource: TEScrollTabBarDataSource?
     weak var delegate: TEScrollTabBarDelegate?
     
+    
+    // 可以設定
     var font: UIFont = UIFont.boldSystemFont(ofSize: 16)
+    var underlineWidth: CGFloat = 3
 
     var selectedIndex: Int! {
         didSet {
@@ -41,7 +44,7 @@ class TEScrollTabBar: UIView {
                     if !cell.isSelected {
                         cell.isSelected = true
                     }
-                    self.selectionIndicator.frame = CGRect(x: cell.frame.origin.x, y: cell.frame.height - 5, width: cell.frame.size.width, height: 5)
+                    self.selectionIndicator.frame = CGRect(x: cell.frame.origin.x, y: cell.frame.height - self.underlineWidth, width: cell.frame.size.width, height: self.underlineWidth)
                 }
             }
         }
@@ -60,8 +63,8 @@ class TEScrollTabBar: UIView {
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.showsHorizontalScrollIndicator = false
-        collectionView.backgroundColor = UIColor.black
-        collectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 5, right: 0)
+        collectionView.backgroundColor = AppTheme.Color.mainBackgroundColor
+        collectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: underlineWidth, right: 0)
         
         collectionView.register(TEScrollTabBarCell.self, forCellWithReuseIdentifier: "TabBarCell")
         
@@ -72,11 +75,11 @@ class TEScrollTabBar: UIView {
         let underLine = UIView()
         underLine.backgroundColor = UIColor(hexString: "f6f6f6").withAlphaComponent(0.3)
         addSubview(underLine)
-        underLine.addConstraints(fromStringArray: ["H:|[$self]|", "V:[$self(3)]|"])
+        underLine.addConstraints(fromStringArray: ["H:|[$self]|", "V:[$self(1)]|"])
         
         
         selectionIndicator = UIView()
-        selectionIndicator.backgroundColor = UIColor.orange
+        selectionIndicator.backgroundColor = AppTheme.Color.selectionColor
         collectionView.addSubview(selectionIndicator)
         
     }
@@ -135,7 +138,7 @@ extension TEScrollTabBar: UICollectionViewDataSource, UICollectionViewDelegate, 
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        return UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
     }
     
     func collectionView(_ collectionView: UICollectionView,

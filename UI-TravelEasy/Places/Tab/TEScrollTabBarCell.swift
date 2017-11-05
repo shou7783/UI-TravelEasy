@@ -17,7 +17,7 @@ class TEScrollTabBarCell: UICollectionViewCell {
         super.init(frame: frame)
         
         titleLabel = UILabel()
-        titleLabel.textColor = UIColor(hexString: "756D64")
+        titleLabel.textColor = AppTheme.Color.grayTextColor
         titleLabel.textAlignment = .center
         contentView.addSubview(titleLabel)
         titleLabel.addConstraints(fromStringArray: ["H:|[$self]|", "V:|[$self]|"])
@@ -27,9 +27,9 @@ class TEScrollTabBarCell: UICollectionViewCell {
     override var isSelected: Bool {
         didSet {
             if isSelected {
-                titleLabel.textColor = UIColor.white
+                titleLabel.textColor = AppTheme.Color.mainTextColor
             } else {
-                titleLabel.textColor = UIColor(hexString: "756D64")
+                titleLabel.textColor = AppTheme.Color.grayTextColor
             }
         }
     }
