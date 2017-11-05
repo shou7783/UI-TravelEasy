@@ -7,18 +7,38 @@
 //
 
 import UIKit
+import BenzeneFoundation
 
-class TEPlacesViewController: UIViewController {
+class TEPlacesViewController: UIViewController, TEScrollTabBarDataSource {
+    
+    let titles = ["Asia", "Europe", "Africa", "Oceania", "South America", "North America", "Antarctica"]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let tabbar = TEScrollTabBar([])
+        tabbar.dataSource = self
+        view.addSubview(tabbar)
+//
+        tabbar.addConstraints(fromStringArray: ["H:|[$self]|", "V:|-50-[$self(50)]"])
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
+    }
+    
+    func numberOfItems(in tabBar: TEScrollTabBar) -> Int {
+        return titles.count
+    }
+    
+    func tabBar(_ tabBar: TEScrollTabBar, titleForItemAt index: Int) -> String {
+        return titles[index]
     }
     
 

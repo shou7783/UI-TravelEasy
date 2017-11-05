@@ -10,6 +10,7 @@
 		4441F14133C2A4DB3A5DA62D /* Pods_UI_TravelEasyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB1C29A1EFBF25CD72A2189A /* Pods_UI_TravelEasyTests.framework */; };
 		4A5ADD4DAE4EC82184F00114 /* Pods_UI_TravelEasyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09DA16295AE0C024249D57A /* Pods_UI_TravelEasyUITests.framework */; };
 		6DBFC1F761450E74FBB2056F /* Pods_UI_TravelEasy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C8C0D7564C2FBCF3A27F253 /* Pods_UI_TravelEasy.framework */; };
+		C083D5C51FAC87D200382C48 /* TEScrollTabBarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C083D5C41FAC87D200382C48 /* TEScrollTabBarCell.swift */; };
 		C0C870E21FAC4FB700093D81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C870E11FAC4FB700093D81 /* AppDelegate.swift */; };
 		C0C870E41FAC4FB700093D81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C870E31FAC4FB700093D81 /* ViewController.swift */; };
 		C0C870E71FAC4FB700093D81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0C870E51FAC4FB700093D81 /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		6C8C0D7564C2FBCF3A27F253 /* Pods_UI_TravelEasy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UI_TravelEasy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D13B810E99E5536E10D08DC /* Pods-UI-TravelEasyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI-TravelEasyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UI-TravelEasyTests/Pods-UI-TravelEasyTests.release.xcconfig"; sourceTree = "<group>"; };
 		A942D70F700737D8723867E9 /* Pods-UI-TravelEasyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UI-TravelEasyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UI-TravelEasyUITests/Pods-UI-TravelEasyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C083D5C41FAC87D200382C48 /* TEScrollTabBarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEScrollTabBarCell.swift; sourceTree = "<group>"; };
 		C09DA16295AE0C024249D57A /* Pods_UI_TravelEasyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UI_TravelEasyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0C870DE1FAC4FB700093D81 /* UI-TravelEasy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UI-TravelEasy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0C870E11FAC4FB700093D81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 			children = (
 				C0C871101FAC508500093D81 /* TEPlacesViewController.swift */,
 				C0C871121FAC50B600093D81 /* TEScrollTabBar.swift */,
+				C083D5C41FAC87D200382C48 /* TEScrollTabBarCell.swift */,
 			);
 			path = Places;
 			sourceTree = "<group>";
@@ -464,6 +467,7 @@
 				C0C870E41FAC4FB700093D81 /* ViewController.swift in Sources */,
 				C0C870E21FAC4FB700093D81 /* AppDelegate.swift in Sources */,
 				C0C871131FAC50B600093D81 /* TEScrollTabBar.swift in Sources */,
+				C083D5C51FAC87D200382C48 /* TEScrollTabBarCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -634,6 +638,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4D7RCMZ7F7;
 				INFOPLIST_FILE = "UI-TravelEasy/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shou.traveleasy.UI-TravelEasy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -651,6 +656,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4D7RCMZ7F7;
 				INFOPLIST_FILE = "UI-TravelEasy/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shou.traveleasy.UI-TravelEasy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
