@@ -80,10 +80,11 @@ extension TEPlacesViewController: UICollectionViewDelegate, UICollectionViewData
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! TEPlacesCell
         let imageView = UIImageView(image: UIImage(named: "\(places[indexPath.row]).jpg"))
         imageView.contentMode = .scaleAspectFill
         cell.backgroundView = imageView
+        cell.titleLabel.text = places[indexPath.row]
         return cell
     }
     
